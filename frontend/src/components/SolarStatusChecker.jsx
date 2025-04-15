@@ -10,8 +10,7 @@ const SolarStatusChecker = () => {
   useEffect(() => {
     const fetchStatus = async () => {
       try {
-        const res = await axios.get("http://localhost:3000/status");
-        // Log data for debugging
+        const res = await axios.get(`http://localhost:3000/status`);
         console.log("Fetched data:", res.data);
         setData(res.data);
         toast.success("Data loaded successfully!");

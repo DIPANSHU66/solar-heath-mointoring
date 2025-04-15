@@ -11,8 +11,8 @@ const HumidityGraph = ({ data }) => (
           <LineChart data={data.filter(entry => entry.date === date)}>
             <CartesianGrid strokeDasharray="3 3" />
             <XAxis dataKey="time" />
-            <YAxis />
-            <Tooltip />
+            <YAxis label={{ value: "Humidity (%)", angle: -90, position: "insideLeft" }} />
+            <Tooltip formatter={(value) => [`${value}%`, "Humidity"]} />
             <Legend />
             <Line type="monotone" dataKey="humidity" stroke="#0000ff" strokeWidth={2} />
           </LineChart>

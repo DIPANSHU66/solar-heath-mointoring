@@ -13,7 +13,6 @@ const HeroSection = () => {
           😊
         </motion.div>
 
-        {/* Sun Rays (Evenly Distributed Around the Sun) */}
         {[...Array(8)].map((_, i) => {
           const angle = i * 45; // 360° / 8 rays = 45° apart
           return (

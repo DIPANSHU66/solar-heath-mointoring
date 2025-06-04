@@ -38,3 +38,4 @@ const IrradianceGraph = ({ data }) => (
 );
 
 export default IrradianceGraph;
+
